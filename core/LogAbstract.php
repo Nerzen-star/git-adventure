@@ -4,18 +4,16 @@ namespace core;
 
 abstract class LogAbstract {
     protected static $i;
+    protected $log = array();
 
-    private function __construct(){
+    private function __construct() {
 
     }
-    public static function Instance(){
+    public static function Instance() {
         if(!(static::$i instanceof static)) {
             static::$i = new static();
         }
         return static::$i;
     }
-
-    protected $log = array();
-
     abstract public function _write();
 }

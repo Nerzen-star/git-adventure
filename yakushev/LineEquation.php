@@ -5,12 +5,11 @@ namespace yakushev;
 class LineEquation {
     protected $x;
 
-    protected function checkOfNum($num) {
-        return is_int($num) || is_float($num);
-    }
-    public function solveLineEquation($a, $b) {
-        if($this->checkOfNum($a) && $this->checkOfNum($b)) {
-            return $a !== 0 ? $this->x = -$b / $a : null;
+    public function solve($a, $b) {
+        if($a != 0) {
+            MyLog::log('This is line equation');
+            return $this->x = array(-$b / $a);
         }
+        throw new YakushevException('No roots');
     }
 }
