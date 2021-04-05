@@ -12,6 +12,15 @@ spl_autoload_register(function($class) {
 
 // Logic
 try {
+    $dir = 'log\\';
+    if (!file_exists($dir)) {
+        mkdir($dir, 0755);
+    }
+
+    $file = fopen("version", "r");
+    MyLog::log("Version program: " . fgets($file));
+    fclose($file);
+
     echo "3 parameters entered: a, b, c \n\r";
     $read = readline();
     $param = explode(" ", $read);
