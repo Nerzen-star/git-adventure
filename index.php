@@ -1,32 +1,42 @@
 <?php
-    class A{
+ini_set("display_errors", 1); error_reporting(-1);
 
-    }		
-    class B extends A{
-        public function __construct($a3){
-            $this->a3 = $a3;
+class LineEquation {
+    protected $x;
+
+    public function solveLineEquation(float $a, float $b) {
+        return $a !== 0 ? $this->x = -$b / $a : null;
+    }
+}
+class SquareEquation extends LineEquation {
+
+    protected function solveDiscriminant($a, $b, $c) {
+        return $d = $b * $b - 4 * $a * $c;
+    }
+
+    public function solveSquareEquation(float $a, float $b, float $c) {
+        if($a !== 0) {
+            $d = $this->solveDiscriminant($a, $b, $c);
+            if($d > 0) {
+                $sd = sqrt($d);
+                $this->x = array((-$b + $sd) / (2 * $a), (-$b - $sd) / (2 * $a));
+            }else if($d === 0) {
+                $this->x = -$b / (2 * $a);
+            }else {
+                return null;
             }
-        protected $a3;
-    }
-    class C extends B{
-        public function __construct($a1, $a2, $a3, $b1){
-            $this->a1 = $a1;
-            $this->a2 = $a2;
-            parent::__construct($a3);
-            $this->b1 = $b1;
+            return $this->x;
         }
-        protected $a1, $a2, $b1;
+        return parent::solveLineEquation($b, $c);
     }
+}
 
-    /*$a1 = new A();
-    $a2 = new A();
-    $a3 = new A();
-    $b1 = new B($a3);
-    $c1 = new C($a1, $a2, $a3, $b1);*/
+$lineEquation = new LineEquation();
+$squareEquation = new SquareEquation();
 
-    // Решение в одну строку
+var_dump($lineEquation->solveLineEquation(0, 4));
+var_dump($squareEquation->solveSquareEquation(2.7, 7.2, 3.5));
 
-    $c1 = new C(new A(), new A(), $a3 = new A(), new B($a3));
 
-    var_dump($c1);
-?>
+
+//list($a, $b, $a, $b, $c) = trim(sscanf());
