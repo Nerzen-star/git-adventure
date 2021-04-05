@@ -23,7 +23,7 @@ class SquareEquation extends LineEquation implements EquationInterface {
         }elseif($d == 0) {
             return $this->x = array(-$b / (2 * $a));
         }
-
+        
         throw new YakushevException('No roots');
     }
 }
