@@ -1,0 +1,32 @@
+{
+    "name": "nerzen-star/git-adventure",
+    "description": "Example project for lesson subject \\\"TRPO\\\"",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Nerzen-star",
+            "email": "exploitatis@gmail.com"
+        }
+    ],
+    "scripts": {
+        "post-install-cmd": [
+            "git symbolic-ref --short -q HEAD>version"
+        ]
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Nerzen-star/equation"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/rok9ru/trpo-core"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "nerzen-star/equation": "^1.0"
+    }
+}

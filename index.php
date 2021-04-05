@@ -2,13 +2,11 @@
 
 use yakushev\SquareEquation;
 use yakushev\MyLog;
-use yakushev\YakushevException;
+use yakushev\YakushevExсeption;
 
 ini_set("display_errors", 1); error_reporting(-1);
 
-spl_autoload_register(function($class) {
-    require_once(__DIR__ . '/' . $class . '.php');
-});
+require_once("vendor/autoload.php");
 
 // Logic
 try {

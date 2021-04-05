@@ -5,3 +5,7 @@ core
 version
 
 log
+
+composer.phar
+
+vendor

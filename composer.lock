@@ -1,0 +1,97 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "0bb13a80523cb37fe8421e66888dc89a",
+    "packages": [
+        {
+            "name": "nerzen-star/equation",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Nerzen-star/equation.git",
+                "reference": "ab43ef92c24c389081c45ce2ffa12ea6c5a19b0b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Nerzen-star/equation/zipball/ab43ef92c24c389081c45ce2ffa12ea6c5a19b0b",
+                "reference": "ab43ef92c24c389081c45ce2ffa12ea6c5a19b0b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3",
+                "rok9ru/trpo-core": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "yakushev\\": "yakushev"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nerzen-star",
+                    "email": "exploitatis@gmail.com"
+                }
+            ],
+            "description": "Example library for lesson subject \\\"TRPO\\\"",
+            "support": {
+                "source": "https://github.com/Nerzen-star/equation/tree/1.0",
+                "issues": "https://github.com/Nerzen-star/equation/issues"
+            },
+            "time": "2021-04-05T19:26:13+00:00"
+        },
+        {
+            "name": "rok9ru/trpo-core",
+            "version": "2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rok9ru/trpo-core.git",
+                "reference": "fd341399677df9ed17a71e4abb9230277ede5395"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rok9ru/trpo-core/zipball/fd341399677df9ed17a71e4abb9230277ede5395",
+                "reference": "fd341399677df9ed17a71e4abb9230277ede5395",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "core\\": "core"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Sleepplayer",
+                    "email": "rok_9@mail.ru"
+                }
+            ],
+            "description": "Project for lesson subject \"TRPO\" test project",
+            "support": {
+                "source": "https://github.com/rok9ru/trpo-core/tree/2.0",
+                "issues": "https://github.com/rok9ru/trpo-core/issues"
+            },
+            "time": "2021-01-13T12:08:11+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^7.3"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}
