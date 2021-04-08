@@ -27,6 +27,6 @@
     ],
     "require": {
         "php": "^7.3",
-        "nerzen-star/equation": "^1.0"
+        "nerzen-star/equation": "^2.0"
     }
 }
